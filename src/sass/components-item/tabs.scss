@@ -1,0 +1,170 @@
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    background-image: url("/src/img/background-main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    &-wrap {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        width: 40%;
+    }
+    &-header {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        li {
+            flex-grow: 1;
+            text-align: center;
+            cursor: pointer;
+            // position: relative;
+            display: flex;
+            &:first-child a{
+                border-top-left-radius: 15px;
+            }
+            &:last-child a{
+                border-top-right-radius: 15px;
+            }
+        }
+    }
+    &__item {
+        font-weight: 600;
+        padding: 10px;
+        flex-grow: 1;
+
+    }
+    .active {
+        background-color: rgba(253, 253, 253, 0.5);
+        border-bottom: 3px solid rgb(122, 121, 121, .8);
+    }
+}
+
+
+
+
+.form {
+    padding: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    &-content {
+        width: 100%;
+        letter-spacing: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        &-title {
+            letter-spacing: inherit;
+            font-size: 1.8rem;
+            color: black;
+            text-transform: capitalize;
+        }
+        &__item {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 10px 0 10px 0;
+        }
+    }
+    &__button {
+        width: 50%;
+        margin-top: 40px;
+    }
+}
+
+.post {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    &-header {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    &-type {
+        padding: 3px 15px;
+        background-color: rgba(253, 253, 253, 0.5);
+        border-radius: 30%;
+    }
+    &-text {
+        width: 100%;
+        background-color: rgba(253, 253, 253, 0.2);
+        padding: 15px 10px;
+    }
+    &-footer {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    &-date {
+        font-size: .7rem;
+    }
+    .add-favorite {
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.3); // Make sure this color has an opacity of less than 1
+    // background: rgba()
+    backdrop-filter: blur(4px); // This be the blur
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgba(253, 253, 253, 0.5);
+    border-radius: 15px;
+    // border: 2px solid rgb(122, 121, 121, .15);
+    // border: 2px solid rgb(122, 121, 121, .8);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 0 3px 0 rgb(199, 200, 207),
+                    0 0 6px 0 rgb(199, 200, 207),
+                    0 0 9px 0 rgb(199, 200, 207),
+                    0 0 12px 0 rgb(199, 200, 207),
+                    0 0 15px 0 rgb(199, 200, 207),
+                    inset 0 0 10px 0 rgb(199, 200, 207);
+    &:hover {
+            // background-color: transparent;
+            box-shadow: 0 0 2px 0 rgb(199, 200, 207),
+                        0 0 4px 0 rgb(199, 200, 207),
+                        0 0 6px 0 rgb(199, 200, 207),
+                        0 0 8px 0 rgb(199, 200, 207),
+                        0 0 10px 0 rgb(199, 200, 207),
+                        inset 0 0 4px 0 rgb(199, 200, 207),
+                        inset 0 0 8px 0 rgb(199, 200, 207),
+                        inset 0 0 12px 0 rgb(199, 200, 207),
+                        inset 0 0 16px 0 rgb(199, 200, 207),
+                        inset 0 0 20px 0 rgb(199, 200, 207);
+    }
+}

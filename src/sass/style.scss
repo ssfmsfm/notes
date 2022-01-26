@@ -1,0 +1,70 @@
+@import "./components-item/tabs.scss";
+@import "./components-item/main.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@100;400;500;700;900&family=Varela+Round&display=swap";
+
+html {
+    color: rgb(22, 19, 19);
+}
+
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    color: inherit;
+    &::placeholder {
+        color: rgb(24, 24, 24);
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea, select {
+    background: transparent;
+    border: 1px solid rgb(122, 121, 121, .8);
+    padding: 5px;
+    // border-radius: 5px;
+    // appearance: none;
+    border-bottom-right-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    // border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+label {
+    font-weight: 600;
+    padding: 5px 0;
+    color:rgb(56, 50, 50)
+}
+
+h1, span, p {
+    cursor: default;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.scroll {
+    height: 300px;
+}
