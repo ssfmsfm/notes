@@ -1,6 +1,6 @@
 import { Component } from "../core/component"
 
-export class CreateComponents extends Component {
+export class CreateComponent extends Component {
     constructor(id) {
         super(id);
 

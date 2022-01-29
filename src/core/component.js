@@ -8,6 +8,6 @@ export class Component {
         this.$el.classList.add("hide");
     }
     show() {
-        $el.classList.remove("hide");
+        this.$el.classList.remove("hide");
     }
 }
