@@ -13,13 +13,14 @@
         <header class="firstscreen" id="header">
             <div class="main blur">
                 <h1 class="main-title">Welcome to the Notes!</h1>
-                <div class="main-text">Sit back, relax and create, my friend.</div>
-                <button href="#" class="main-button js-header-start">Just do it!</button>
+                <div class="main-text">Sit back, relax, watch and create, my friend.</div>
+                <button class="main-button js-header-start">Just do it!</button>
             </div>
         </header>
 
         <section class="tabs">
             <div class="tabs-wrap">
+
                 <ul class="tabs-header blur" id="navigation">
                     <li>
                         <a href="#" class="tabs__item" data-name="posts">Posts</a>
@@ -31,22 +32,24 @@
                         <a href="#" class="tabs__item" data-name="favorite">Favorite*</a>
                     </li>
                 </ul>
+
                 <form action="" method="post" class="form blur" id="create">
                     <div class="form-content">
+
                         <h1 class="form-content-title">Create new post</h1>
                         <div class="form-content__item">
                             <label for="title">Title</label>
-                            <input type="text" id="title" placeholder="Enter your title">
+                            <input type="text" name="title" id="title" placeholder="Enter your title">
                         </div>
                         <div class="form-content__item">
                             <label for="text">Text</label>
-                            <textarea name="" id="text" cols="30" rows="5" placeholder="Enter your text"></textarea>
+                            <textarea name="fulltext" id="text" cols="30" rows="5" placeholder="Enter your text"></textarea>
                         </div>
                         <div class="form-content__item">
                             <label for="post-type">Choose type of post</label>
                             <select name="" id="post-type">
-                                <option value="">News</option>
-                                <option value="">Notes</option>
+                                <option value="note">News</option>
+                                <option value="news">Notes</option>
                             </select>
                         </div>
 
@@ -55,6 +58,7 @@
                 </form>
 
                 <div class="post blur hide" id="posts">
+
                     <header class="post-header">
                         <h1 class="post-title">
                             Post title
@@ -70,11 +74,13 @@
                         <span class="post-date">01/17/2022</span>
                         <button class="add-favorite button">Add favorite</button>
                     </footer>
+
                 </div>
 
 
 
                 <div class="favorite post blur hide" id="favorite">
+
                     <header class="post-header">
                         <h1 class="post-title">
                             Post title
@@ -90,12 +96,10 @@
                         <span class="post-date">01/17/2022</span>
                         <button class="add-favorite button">Add favorite</button>
                     </footer>
+
                 </div>
             </div>
         </section>
-
-        
-        <!-- <div class="scroll"></div> -->
     </div>
 </body>
 </html>
