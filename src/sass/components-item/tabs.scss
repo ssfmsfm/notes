@@ -11,6 +11,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -19,6 +21,7 @@
         top: 15%;
         left: 30%;
         width: 40%;
+        
     }
     &-header {
         width: 100%;
@@ -89,12 +92,23 @@
     }
 }
 
+.posts-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    .post:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
 .post {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
+    width: 100%;
     &-header {
         width: 100%;
         display: flex;
@@ -132,7 +146,6 @@
 
 .blur {
     background: rgba(255, 255, 255, 0.3); // Make sure this color has an opacity of less than 1
-    // background: rgba()
     backdrop-filter: blur(4px); // This be the blur
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -167,4 +180,30 @@
                         inset 0 0 16px 0 rgb(199, 200, 207),
                         inset 0 0 20px 0 rgb(199, 200, 207);
     }
+}
+
+.center {
+    font-weight: 600;
+}
+
+.favorites {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    .js-link {
+        display: block;
+        width: 100%;
+        border-radius: 5% / 30%;
+        padding: 20px;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.posts-wrap, .favorites {
+    padding-bottom: 40px;
 }

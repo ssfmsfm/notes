@@ -27,24 +27,10 @@ function tabClickHandler(e) {
         });
         e.target.classList.add("active");
 
-        // const ACTIVE_TAB = this.tabs.find( tab => {
-        //     return tab.name === e.target.dataset.name;
-        // }).component;
+        const ACTIVE_TAB = this.tabs.find( tab => tab.name === e.target.dataset.name);
+        console.log(ACTIVE_TAB);
 
-        // for (let {component} of this.tabs) {
-        //     component.hide();
-        //     if (component == ACTIVE_TAB) {
-        //         component.show();
-        //     }
-        // }
-
-        const ACTIVE_TAB = this.tabs.find( tab => {
-            return tab.name === e.target.dataset.name;
-        });
-
-        this.tabs.forEach(tab => {
-            tab.component.hide();
-        })
+        this.tabs.forEach(tab => tab.component.hide());
         ACTIVE_TAB.component.show();
     }
 }
