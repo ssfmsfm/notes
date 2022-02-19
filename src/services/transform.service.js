@@ -4,7 +4,7 @@ export class TransformService {
             // console.log(keys);
             const item = fbData[keys];
             item.id = keys;
-            console.log(item);
+            // console.log(item);
             return item;
         });
     }

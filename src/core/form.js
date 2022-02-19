@@ -9,7 +9,7 @@ export class Form {
         Object.keys(this.controls).forEach( control => {
             value[control] = this.form[control].value;
         });
-        return value;
+        return value; // преобразование для последующей записи в базу данных
     }
 
     clear() {

@@ -5,7 +5,6 @@ import { renderPost } from "../templates/post.template";
 export class FavoriteComponent extends Component {
     constructor(id) {
         super(id);
-
     }
 
     init() {
@@ -24,6 +23,7 @@ export class FavoriteComponent extends Component {
 }
 
 async function linkClickHandler(event) {
+    console.log(event);
     event.preventDefault();
 
     if (event.target.classList.contains("js-link")) {
@@ -44,7 +44,7 @@ function renderList(list = []) {
         return `
                 ${list
                     .map(
-                    (i) =>
+                    i =>
                     `<a href="#" class='js-link blur' data-id='${i.id}'>${i.title}</a>` // Укажем заголовок и соответствующие id
                     )
                     .join(" ")}

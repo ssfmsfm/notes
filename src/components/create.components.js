@@ -14,6 +14,7 @@ export class CreateComponent extends Component {
             title: [Validators.required],
             fulltext: [Validators.required, Validators.minLength(8)]
         });
+        // console.log(this.form.controls);
     }
 }
 

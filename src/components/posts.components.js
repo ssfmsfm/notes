@@ -16,10 +16,10 @@ export class PostsComponent extends Component {
 
     async onShow() {
         const fbData = await apiService.fetchPost();
+
         const posts = TransformService.fbObjectToArray(fbData);
 
         const html = posts.map(post => renderPost(post, { withButton: true }));
-
         this.$el.insertAdjacentHTML("afterbegin", html.join(" "));
     }
 
@@ -34,7 +34,7 @@ function buttonHandler(event) {
     const title = $el.dataset.title;
 
     if(id) {
-        console.log(id);
+        // console.log(id);
 
         let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
